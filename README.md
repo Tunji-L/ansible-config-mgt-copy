@@ -1,3 +1,3 @@
 # ansible-config-mgt
 
-copy artifact and
+copy artifact
