@@ -27,21 +27,20 @@
 
 
 - name: create directory, file and set timezone on all servers
- 	host: webservers, nfs, db, lb
- 	become: yes
- 	tasks: 
+  host: webservers, nfs, db, lb
+  become: yes
+  tasks: 
 
- 		- name: create directory
- 			file:
- 				path: /home/sample
- 				state: directory
+    - name: create directory
+      file:
+        path: /home/sample
+        state: directory
 
- 		- name: create a file
- 			file:
- 				path: /home/sample/ansible.txt
- 				state: touch
+    - name: create a file
+      file:
+        path: /home/sample/ansible.txt
+        state: touch
 
- 		- name: set timezone
- 			timezone:
- 				name: Africa/Lagos
-        
+    - name: set timezone
+      timezone:
+        name: Africa/Lagos
