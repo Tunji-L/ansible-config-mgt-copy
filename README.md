@@ -1,2 +1,2 @@
 # ansible-config-mgt
-save_artifact (permission error)
+save_artifact (permission denied)
