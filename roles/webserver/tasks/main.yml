@@ -1,4 +1,9 @@
 ---
+- name: update repo
+  become: true
+  ansible.builtin.yum:
+    update_cache: yes
+    
 - name: install apache
   become: true
   ansible.builtin.yum:
