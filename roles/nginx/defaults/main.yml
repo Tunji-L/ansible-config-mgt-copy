@@ -48,7 +48,7 @@ nginx_extra_conf_options: ""
 #     include /etc/nginx/main.d/*.conf;
 
 nginx_extra_http_options: ""
- Example extra http options, printed inside the main server http config:
+Example extra http options, printed inside the main server http config:
     nginx_extra_http_options: |
       proxy_buffering    off;
       proxy_set_header   X-Real-IP $remote_addr;
@@ -83,8 +83,8 @@ nginx_upstreams:
    strategy: "ip_hash" # "least_conn", etc.
    keepalive: 16 # optional
    servers: {
-     "web1 weight=3"
-     "web2 weight=3"
+     "web1 weight=3",
+     "web2 weight=3",
      "proxy_pass http://myapp1"
    }
 
