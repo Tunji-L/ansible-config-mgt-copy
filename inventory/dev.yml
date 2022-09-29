@@ -9,4 +9,4 @@
 10.0.0.252 ansible_ssh_user='ec2-user' 
 
 [lb]
-10.0.0.176 ansible_ssh_user='ubuntu'
+10.0.0.209 ansible_ssh_user='ubuntu'
