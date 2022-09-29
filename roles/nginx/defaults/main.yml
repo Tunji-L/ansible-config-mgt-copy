@@ -85,7 +85,6 @@ nginx_upstreams:
    servers: {
      "web1 weight=3",
      "web2 weight=3",
-     "proxy_pass http://myapp1"
    }
 
 nginx_log_format: |-
