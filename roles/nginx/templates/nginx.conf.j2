@@ -1,10 +1,10 @@
 user  {{ nginx_user }};
 
-error_log  {{ nginx_error_log }};
 pid        {{ nginx_pidfile }};
 
 {% block worker %}
 worker_processes  {{ nginx_worker_processes }};
+include /etc/nginx/modules-enabled/*.conf;
 {% endblock %}
 
 {% if nginx_extra_conf_options %}
@@ -32,6 +32,7 @@ http {
     log_format  main  {{ nginx_log_format|indent(23) }};
 
     access_log  {{ nginx_access_log }};
+    error_log  {{ nginx_error_log }};
 
     sendfile        {{ nginx_sendfile }};
     tcp_nopush      {{ nginx_tcp_nopush }};
