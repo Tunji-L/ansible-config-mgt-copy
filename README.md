@@ -1,2 +1,2 @@
 # ansible-config-mgt
-save_artifact
+save_artifact and jenkinsfile
