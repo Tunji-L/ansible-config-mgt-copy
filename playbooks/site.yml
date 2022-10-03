@@ -5,4 +5,4 @@
 
 - hosts: nginx
 - name: nginx assignment
-  ansible.builtin.import_playbook: ../static-assignments/loadbalancer.yml
+  ansible.builtin.import_playbook: ../static-assignments/loadbalancers.yml
