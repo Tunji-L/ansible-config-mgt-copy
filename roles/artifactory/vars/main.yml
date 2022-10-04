@@ -1,2 +1,5 @@
----
-# vars file for artifactory
+# platform collection version
+platform_collection_version: 10.8.6
+
+# indicates where this collection was downloaded from (galaxy, automation_hub, standalone)
+ansible_marketplace: galaxy
