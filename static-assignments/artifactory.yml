@@ -1,5 +1,8 @@
 ---
 - hosts: artifactory
   become: true
+  vars:
+    artifactory_enabled: true
+    artifactory_upgrade_only: false
   roles:
     - artifactory
