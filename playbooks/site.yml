@@ -1,7 +1,11 @@
 ---
-- hosts: db
-- name: database assignment
-  ansible.builtin.import_playbook: ../static-assignments/database.yml
+#- hosts: db
+#- name: database assignment
+#  ansible.builtin.import_playbook: ../static-assignments/database.yml
+
+- hosts: todo
+- name: deploy todo application
+  ansible.builtin.import_playbook: ../static-assignments/deployment.yml
 
 #- hosts: nginx
 #- name: nginx assignment
