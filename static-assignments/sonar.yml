@@ -1,0 +1,7 @@
+---
+- name: Install SonarQube
+  hosts: sonar
+  become: true
+  become_user: root
+  roles:
+    - sonar
