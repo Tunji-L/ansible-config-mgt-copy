@@ -3,13 +3,13 @@
 #- name: database assignment
 #  ansible.builtin.import_playbook: ../static-assignments/database.yml
 
-#- hosts: todo
-#- name: deploy todo application
-#  ansible.builtin.import_playbook: ../static-assignments/deployment.yml
+- hosts: todo
+- name: deploy todo application
+  ansible.builtin.import_playbook: ../static-assignments/deployment.yml
 
 #- hosts: sonar
 #- name: Install sonarqube
-  ansible.builtin.import_playbook: ../static-assignments/sonar.yml
+#  ansible.builtin.import_playbook: ../static-assignments/sonar.yml
 
 #- hosts: nginx
 #- name: nginx assignment
