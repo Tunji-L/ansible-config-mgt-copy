@@ -1,5 +1,5 @@
 # ansible-config-mgt
-save_artifact and jenkinsfiles
+save_artifact and jenkinsfile
 #### Quick Task Jenkinfile
 pipeline {
     agent any
