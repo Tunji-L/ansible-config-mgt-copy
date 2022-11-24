@@ -123,7 +123,7 @@ Learn how to install Jenkins [here](https://www.jenkins.io/doc/book/installing/)
 Learn how to installk artifactory [here](https://jfrog.com/open-source/)
 
 
-#### JEnkinsfile for Quick Task
+#### Jenkinsfile for Quick Task
 ==================================
 
 ```
